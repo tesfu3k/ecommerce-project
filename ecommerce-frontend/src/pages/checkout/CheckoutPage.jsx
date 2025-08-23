@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 
 export function CheckoutPage({ cart }) {
   const [deliveryOptions, setDeliveryOptions] = useState([]);
-  const [paymentSummary, setPaymentSummary] = useState("");
+  const [paymentSummary, setPaymentSummary] = useState(null);
 
   useEffect(() => {
     axios

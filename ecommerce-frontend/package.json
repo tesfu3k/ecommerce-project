@@ -12,6 +12,7 @@
   "dependencies": {
     "axios": "^1.8.4",
     "dayjs": "^1.11.13",
+    "get-port": "^7.1.0",
     "react-dom": "^19.0.0",
     "react-router": "^7.1.5"
   },
