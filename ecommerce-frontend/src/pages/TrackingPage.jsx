@@ -96,7 +96,10 @@ export function TrackingPage({ cart }) {
 
           <div className="product-info">Quantity: {orderProduct.quantity}</div>
 
-          <img className="product-image" src={orderProduct.product.image} />
+          <img
+            className="product-image"
+            src={`/+${orderProduct.product.image}`}
+          />
 
           <div className="progress-labels-container">
             <div
