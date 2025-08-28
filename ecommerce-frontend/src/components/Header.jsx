@@ -3,10 +3,10 @@ import "./Header.css";
 
 export function Header({ cart, loadCart }) {
   let totalQuantity = 0;
-  cart.forEach((cartItem) => {
+  cart.forEach(async (cartItem) => {
     totalQuantity += cartItem.quantity;
+    await loadCart();
   });
-  loadCart();
 
   return (
     <div className="header">
